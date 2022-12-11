@@ -1,0 +1,5 @@
+C:\Users\Fushigi\Desktop\Семинары с#\sem_5\HM_3\obj\Debug\net6.0\HM_3.csproj.AssemblyReference.cache
+C:\Users\Fushigi\Desktop\Семинары с#\sem_5\HM_3\obj\Debug\net6.0\HM_3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Fushigi\Desktop\Семинары с#\sem_5\HM_3\obj\Debug\net6.0\HM_3.AssemblyInfoInputs.cache
+C:\Users\Fushigi\Desktop\Семинары с#\sem_5\HM_3\obj\Debug\net6.0\HM_3.AssemblyInfo.cs
+C:\Users\Fushigi\Desktop\Семинары с#\sem_5\HM_3\obj\Debug\net6.0\HM_3.csproj.CoreCompileInputs.cache

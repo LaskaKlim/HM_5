@@ -5,7 +5,6 @@ int size = Convert.ToInt32(Console.ReadLine());
 int[] numbers = new int[size];
 int count = 0;
 
-
 void FillArrayRandomNumbers(int[] array) 
 {
     for(int i = 0; i < array.Length; i++)

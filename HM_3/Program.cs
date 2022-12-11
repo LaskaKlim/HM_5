@@ -1,66 +1,49 @@
 ﻿Console.WriteLine("Введите размер массива: ");
 int size = Convert.ToInt32(Console.ReadLine());
-int[] numbers = new int[size];
-
+int[] arrnumb = new int[size];
 Console.WriteLine("Введите число начала диапазона: ");
 int first = Convert.ToInt32(Console.ReadLine());
-
 Console.WriteLine("Введите число окончания диапазона: ");
 int second = Convert.ToInt32(Console.ReadLine());
-int maxnum = 0;
-int minnum =0;
 
-if ( first < second)   
+if (first< second)
 {
-    int[] numb = new int[size];
+    FillArrayRandom(arrnumb);
+    int numMax = arrnumb[0];
+    int numMin = arrnumb[0];
 
-    int maxnum = numb[0];
-    int minnum = numb[0];
-    for (int i = 0; i < numb.Length; i++)
+    for (int i = 0; i < arrnumb.Length; i++)
     {
-        if (numbers[i] > maxnum)
+        if (arrnumb[i] > numMax)
+            {
+                numMax = arrnumb[i];
+            }
+        else if (arrnumb[i] < numMin)
+            {
+                numMin = arrnumb[i];
+            }
+
+    }
+    PrintArray(arrnumb);  
+
+    Console.WriteLine($"Минимальное число: {numMin}");
+    Console.WriteLine($"Максимальное число:  {numMax}");
+    Console.WriteLine($"Разница между максимальным и минимальным числами: {numMax - numMin}");
+
+    void FillArrayRandom(int[] array)
+    {
+        for (int i = 0; i < array.Length; i++)
         {
-            maxnum = numb[i];
-        }
-        else if (numb[i] < minnum)
-        {
-            minnum = numb[i];
+            array[i] = new Random().Next(first, second);  
         }
     }
-}
-else 
-{
-    Console.WriteLine("введенные данные некорректны"); 
-     break;
-}
-
-FillArrayRandom(numb);
-PrintArray(numb);
-
-void FillArrayRandom(int[] array)
-{
-     for (int i = 0; i < array.Length; i++)
+    void PrintArray(int[] array)
     {
-        array[i] = new Random().Next(first, second);  
-    }
-}
-void PrintArray(int[] array)
-{
-    for (int i = 0; i < array.Length; i++)
+        for (int i = 0; i < array.Length; i++)
         {
             Console.Write(array[i] + " ");
         }
             Console.WriteLine();
+    }
 }
-
-
-   
-
-
-
-Console.WriteLine("Минимальное число: "+ minnum);
-Console.WriteLine("Минимальное число: " + maxnum);
-Console.WriteLine("Разница между максимальным и минимальным числами: "+ (maxnum + minnum));
-
-
-
+else Console.WriteLine ("incorrect");

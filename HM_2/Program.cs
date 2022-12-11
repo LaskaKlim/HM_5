@@ -6,7 +6,7 @@ Console.WriteLine("Введите число начала диапазона: ")
 int first = Convert.ToInt32(Console.ReadLine());
 
 Console.WriteLine("Введите число окончания диапазона: ");
-int  second = Convert.ToInt32(Console.ReadLine());
+int second = Convert.ToInt32(Console.ReadLine());
 void FillArrayRandom(int[] array)
 {
     for (int i = 0; i < array.Length; i++)
